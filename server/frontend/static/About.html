@@ -1,12 +1,101 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6fa;
+            text-align: center;
+        }
+
+        nav {
+            background: #173b64;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        nav a.active {
+            color: #ffd166;
+            font-weight: bold;
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .member {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .member img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-    <h1>About Us</h1>
-    <p>Welcome to our team page!</p>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="About.html" class="active">About Us</a>
+    <a href="Contact.html">Contact Us</a>
+</nav>
+
+<h1>About Us</h1>
+<p>Meet our talented development team!</p>
+
+<div class="team">
+
+    <div class="member">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg"
+             alt="Ali Khan">
+        <h2>Ali Khan</h2>
+        <h3>Frontend Developer</h3>
+        <p>Creates attractive and user-friendly website designs.</p>
+        <p>Email: ali@example.com</p>
+    </div>
+
+    <div class="member">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg"
+             alt="Ahmed">
+        <h2>Ahmed</h2>
+        <h3>Backend Developer</h3>
+        <p>Works on server-side logic and database management.</p>
+        <p>Email: ahmed@example.com</p>
+    </div>
+
+    <div class="member">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg"
+             alt="Sara">
+        <h2>Sara</h2>
+        <h3>UI/UX Designer</h3>
+        <p>Designs simple and engaging user experiences.</p>
+        <p>Email: sara@example.com</p>
+    </div>
+
+</div>
+
 </body>
 </html>
